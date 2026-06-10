@@ -23,6 +23,19 @@ export async function onRequestPost(context) {
   /* Honeypot check */
   if (data._gotcha) return json({ ok: true }, 200);
 
+  /* Turnstile verification */
+  const turnstileSecret = env.TURNSTILE_SECRET_KEY;
+  if (turnstileSecret) {
+    const token = data['cf-turnstile-response'] || '';
+    const verify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ secret: turnstileSecret, response: token }),
+    });
+    const result = await verify.json();
+    if (!result.success) return json({ ok: false, error: 'CAPTCHA failed' }, 400);
+  }
+
   /* Basic validation */
   const name    = (data.name    || '').trim();
   const email   = (data.email   || '').trim();
