@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# ascania-tampa.com → ascaniatampa.com  (set in Cloudflare dashboard as domain redirect)
+
+# Trailing slash normalization
+/references   /references/   301

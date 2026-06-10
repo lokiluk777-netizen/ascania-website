@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>References | ASCANIA Renovation &amp; Management · Tampa Bay, FL</title>
+  <meta name="description" content="Project references by ASCANIA — construction supervision and renovation project management. 32-unit apartment hotel case study." />
+  <link rel="canonical" href="https://www.ascaniatampa.com/references/" />
+  <link rel="icon" type="image/x-icon"    href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180"    href="../assets/images/apple-touch-icon.png" />
+  <link rel="manifest"                            href="../site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    /* ---- References page specific ---- */
+    .ref-page-hero {
+      background: var(--navy);
+      padding: clamp(100px,14vw,160px) var(--section-px) clamp(56px,7vw,96px);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .ref-page-hero h1 {
+      color: var(--white);
+      font-size: clamp(2rem,5vw,3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .ref-page-hero p {
+      color: rgba(255,255,255,0.65);
+      font-size: clamp(1rem,2vw,1.125rem);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ---- Case study layout ---- */
+    .case-study {
+      padding: var(--section-py) var(--section-px);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    .case-study-header {
+      margin-bottom: 48px;
+    }
+    .cs-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .cs-tag {
+      display: inline-block;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .cs-tag--type  { background: rgba(46,125,140,0.15); color: var(--teal); }
+    .cs-tag--loc   { background: rgba(201,168,76,0.12); color: var(--gold); }
+    .cs-tag--scope { background: rgba(27,42,74,0.08);   color: var(--navy); }
+    @media (prefers-color-scheme: dark) {
+      .cs-tag--scope { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7); }
+    }
+    .case-study-header h2 {
+      font-size: clamp(1.5rem,3.5vw,2.25rem);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+    .case-study-header p {
+      color: var(--text-mid);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 760px;
+    }
+
+    /* ---- Stats row ---- */
+    .cs-stats {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 16px;
+      margin: 32px 0 48px;
+    }
+    @media (min-width: 600px) { .cs-stats { grid-template-columns: repeat(4,1fr); } }
+    .cs-stat {
+      background: var(--offwhite);
+      border-radius: var(--radius-lg);
+      padding: 20px 16px;
+      text-align: center;
+    }
+    .cs-stat-value {
+      display: block;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .cs-stat-label {
+      font-size: 0.75rem;
+      color: var(--text-mid);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---- Scope list ---- */
+    .cs-scope {
+      margin: 0 0 48px;
+    }
+    .cs-scope h3 {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--teal);
+      margin-bottom: 16px;
+    }
+    .cs-scope ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    @media (min-width: 560px) { .cs-scope ul { grid-template-columns: 1fr 1fr; } }
+    .cs-scope li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9375rem;
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+    .cs-scope li::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    /* ---- Photo gallery ---- */
+    .cs-gallery {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    @media (min-width: 768px) {
+      .cs-gallery {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+      .cs-gallery-featured { grid-column: 1; grid-row: 1 / 3; }
+    }
+    .cs-gallery-item {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--surface-low);
+    }
+    .cs-gallery-featured {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--surface-low);
+    }
+    .cs-gallery img, .cs-gallery-featured img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      aspect-ratio: 4/3;
+    }
+    @media (min-width: 768px) {
+      .cs-gallery-featured img { aspect-ratio: unset; height: 100%; min-height: 400px; }
+      .cs-gallery-item img { aspect-ratio: 4/3; }
+    }
+
+    /* ---- CTA strip ---- */
+    .ref-cta-strip {
+      background: var(--navy);
+      padding: clamp(56px,7vw,96px) var(--section-px);
+      text-align: center;
+    }
+    .ref-cta-strip h2 {
+      color: var(--white);
+      font-size: clamp(1.5rem,3.5vw,2.25rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .ref-cta-strip p {
+      color: rgba(255,255,255,0.65);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 32px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../" aria-label="ASCANIA — Home">
+      <img src="../assets/images/ascania_logo_on_dark.png"
+           alt="ASCANIA Renovation &amp; Management Logo"
+           class="nav-logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-text" style="display:none;">ASCANIA</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="../#pain-points" data-i18n="nav-process">How It Works</a></li>
+      <li><a href="../#services"    data-i18n="nav-services">Services</a></li>
+      <li><a href="../#why-ascania" data-i18n="nav-why">Why ASCANIA</a></li>
+      <li><a href="../#about"       data-i18n="nav-about">About</a></li>
+      <li><a href="../references/index.html" data-i18n="nav-references" aria-current="page">References</a></li>
+      <li><a href="../#contact"     data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn"        data-lang="de">DE</button>
+      </div>
+      <a href="../#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.8125rem;" data-i18n="nav-cta">Get in Touch</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="../#pain-points" data-i18n="nav-process">How It Works</a>
+  <a href="../#services"    data-i18n="nav-services">Services</a>
+  <a href="../#why-ascania" data-i18n="nav-why">Why ASCANIA</a>
+  <a href="../#about"       data-i18n="nav-about">About</a>
+  <a href="../references/index.html" data-i18n="nav-references">References</a>
+  <a href="../#contact"     data-i18n="nav-contact">Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn"        data-lang="de">DE</button>
+  </div>
+  <a href="../#contact" class="btn btn-teal" data-i18n="nav-cta">Get in Touch</a>
+</nav>
+
+<!-- Hero -->
+<header class="ref-page-hero">
+  <img src="../assets/images/ascania_palm_transparent.png" alt="" class="hero-watermark" aria-hidden="true" style="opacity:.04;" onerror="this.style.display='none';" />
+  <p class="eyebrow" style="color:var(--gold);margin-bottom:16px;" data-i18n="ref-prev-eyebrow">Our Work</p>
+  <h1 data-i18n="ref-h1">Projects &amp; References</h1>
+  <p data-i18n="ref-sub">From concept to completion — construction supervision, trades coordination, and renovation project management.</p>
+</header>
+
+<!-- Case Study: Apartment Hotel -->
+<main>
+<section class="case-study">
+
+  <div class="case-study-header">
+    <div class="cs-meta">
+      <span class="cs-tag cs-tag--type" data-i18n="cs-tag-type">Commercial Construction</span>
+      <span class="cs-tag cs-tag--loc"  data-i18n="cs-tag-loc">Europe · Completed</span>
+      <span class="cs-tag cs-tag--scope" data-i18n="cs-tag-scope">Project Management &amp; Supervision</span>
+    </div>
+    <h2 data-i18n="cs-h2">Apartment Hotel · 32 Units</h2>
+    <p data-i18n="cs-intro">Full construction supervision of a 32-unit apartment hotel — from structural shell to finished units ready for operation. ASCANIA coordinated all trades on-site, oversaw quality at every phase, and managed the installation of network infrastructure, security camera systems, and electronic access control throughout the entire building.</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="cs-stats">
+    <div class="cs-stat">
+      <span class="cs-stat-value">32</span>
+      <span class="cs-stat-label" data-i18n="cs-stat1">Units Supervised</span>
+    </div>
+    <div class="cs-stat">
+      <span class="cs-stat-value">3</span>
+      <span class="cs-stat-label" data-i18n="cs-stat2">Floors</span>
+    </div>
+    <div class="cs-stat">
+      <span class="cs-stat-value">10+</span>
+      <span class="cs-stat-label" data-i18n="cs-stat3">Trades Coordinated</span>
+    </div>
+    <div class="cs-stat">
+      <span class="cs-stat-value">100%</span>
+      <span class="cs-stat-label" data-i18n="cs-stat4">On-Site Supervision</span>
+    </div>
+  </div>
+
+  <!-- Scope of work -->
+  <div class="cs-scope">
+    <h3 data-i18n="cs-scope-h">Scope of Work</h3>
+    <ul>
+      <li data-i18n="cs-scope-1">Construction supervision across all trades</li>
+      <li data-i18n="cs-scope-2">Quality control from shell to handover</li>
+      <li data-i18n="cs-scope-3">Network infrastructure &amp; data cabling</li>
+      <li data-i18n="cs-scope-4">Security camera system installation</li>
+      <li data-i18n="cs-scope-5">Electronic access control (all 32 units)</li>
+      <li data-i18n="cs-scope-6">Drywall, flooring &amp; interior finishes</li>
+      <li data-i18n="cs-scope-7">Contractor scheduling &amp; coordination</li>
+      <li data-i18n="cs-scope-8">Final inspection &amp; defect management</li>
+    </ul>
+  </div>
+
+  <!-- Gallery -->
+  <div class="cs-gallery" role="list" aria-label="Project photos">
+    <div class="cs-gallery-featured" role="listitem">
+      <img src="../assets/images/references/aparthotel_2.jpg"
+           alt="Apartment hotel — front facade, 3-story building"
+           loading="lazy" />
+    </div>
+    <div class="cs-gallery-item" role="listitem">
+      <img src="../assets/images/references/aparthotel_1.jpg"
+           alt="Apartment hotel — side view with fire escape"
+           loading="lazy" />
+    </div>
+    <div class="cs-gallery-item" role="listitem">
+      <img src="../assets/images/references/aparthotel_3.jpg"
+           alt="Interior — drywall construction phase"
+           loading="lazy" />
+    </div>
+    <div class="cs-gallery-item" role="listitem">
+      <img src="../assets/images/references/aparthotel_4.jpg"
+           alt="Interior — finished unit with flooring and paint"
+           loading="lazy" />
+    </div>
+    <div class="cs-gallery-item" role="listitem">
+      <img src="../assets/images/references/aparthotel_5.jpg"
+           alt="Interior — finished bedroom unit"
+           loading="lazy" />
+    </div>
+  </div>
+
+</section>
+</main>
+
+<!-- CTA -->
+<div class="ref-cta-strip">
+  <img src="../assets/images/ascania_palm_transparent.png" alt="" class="footer-watermark" aria-hidden="true" style="opacity:.04;" onerror="this.style.display='none';" />
+  <h2 data-i18n="ref-cta-h3">Your Project Could Be Next</h2>
+  <p data-i18n="ref-cta-body">We're actively taking on first projects in Tampa Bay. Be part of ASCANIA's Florida story from day one.</p>
+  <a href="../#contact" class="btn btn-teal" data-i18n="ref-cta-btn">Start Your Project</a>
+</div>
+
+<!-- Footer -->
+<footer id="footer" role="contentinfo">
+  <img src="../assets/images/ascania_palm_transparent.png" alt="" class="footer-watermark" aria-hidden="true" onerror="this.style.display='none';" />
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-brand-name">ASCANIA</p>
+        <p class="footer-tagline" data-i18n="footer-tagline">Renovation &amp; Project Management · Tampa Bay, FL</p>
+        <p class="footer-tagline" data-i18n="footer-legal">Ascania Consulting, Corp. · Est. 2021</p>
+        <div class="footer-contact-list" style="margin-top:16px;">
+          <a href="tel:+17272031510">+1 (727) 203-1510</a>
+          <a href="mailto:hello@ascaniatampa.com">hello@ascaniatampa.com</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer-nav-title">Navigation</h4>
+        <nav class="footer-nav">
+          <a href="../#services"  data-i18n="nav-services">Services</a>
+          <a href="../#about"     data-i18n="nav-about">About</a>
+          <a href="../#contact"   data-i18n="nav-contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p class="footer-copy" data-i18n="footer-copy">© 2026 Ascania Consulting, Corp. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/lang.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
