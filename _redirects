@@ -1,5 +1,8 @@
 # Cloudflare Pages Redirects
 # ascania-tampa.com → ascaniatampa.com  (set in Cloudflare dashboard as domain redirect)
 
+# www → apex redirect
+https://www.ascaniatampa.com/* https://ascaniatampa.com/:splat 301
+
 # Trailing slash normalization
 /references   /references/   301
