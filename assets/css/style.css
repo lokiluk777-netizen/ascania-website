@@ -591,6 +591,18 @@ h1, h2, h3, h4 {
   color: var(--text-mid);
   line-height: 1.65;
 }
+/* Core Specialty cards — Flooring & Painting */
+.service-card--core {
+  border-top: 3px solid var(--teal);
+}
+.service-card--core .service-card-tag {
+  color: var(--gold);
+  background: rgba(201, 168, 76, 0.12);
+}
+.service-card--core h3 {
+  font-size: 1.125rem;
+}
+
 /* Featured PM card spans full width or highlights */
 .service-card--featured {
   background: var(--navy);
