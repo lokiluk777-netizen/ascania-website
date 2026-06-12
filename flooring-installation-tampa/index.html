@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Vinyl &amp; Hardwood Flooring Installation Tampa | ASCANIA</title>
+  <meta name="description" content="Professional LVP, laminate &amp; hardwood flooring installation in Tampa, St. Petersburg &amp; Clearwater. Clean work, clear pricing. Get a free quote today." />
+  <meta name="keywords" content="vinyl flooring installation Tampa, LVP flooring installer Tampa Bay, luxury vinyl plank installation St. Petersburg, flooring contractor Clearwater, hardwood flooring installation Tampa" />
+  <link rel="canonical" href="https://www.ascaniatampa.com/flooring-installation-tampa/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.ascaniatampa.com/flooring-installation-tampa/" />
+  <meta property="og:title"       content="Vinyl &amp; Hardwood Flooring Installation in Tampa Bay | ASCANIA" />
+  <meta property="og:description" content="Professional LVP, laminate &amp; hardwood flooring installation for homeowners in Tampa, St. Petersburg &amp; Clearwater. Done right, on time. Free quotes." />
+  <meta property="og:image"       content="https://www.ascaniatampa.com/assets/images/ascania_logo_on_dark.png" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon"    href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180"    href="../assets/images/apple-touch-icon.png" />
+  <link rel="manifest"                            href="../site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    /* ---- Service page hero ---- */
+    .svc-hero {
+      background: var(--navy);
+      padding: clamp(120px,16vw,180px) var(--section-px) clamp(64px,8vw,100px);
+      position: relative;
+      overflow: hidden;
+    }
+    .svc-hero-inner { max-width: var(--max-w); margin: 0 auto; }
+    .svc-hero h1 {
+      color: var(--white);
+      font-size: clamp(1.75rem,4.5vw,2.875rem);
+      font-weight: 700;
+      line-height: 1.15;
+      max-width: 820px;
+      margin-bottom: 20px;
+    }
+    .svc-hero p.svc-hero-sub {
+      color: rgba(255,255,255,0.7);
+      font-size: clamp(1rem,2vw,1.125rem);
+      line-height: 1.75;
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+    .svc-hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    /* ---- Content typography ---- */
+    .svc-section-header { max-width: 760px; margin-bottom: 40px; }
+    .svc-section-header h2 {
+      font-size: clamp(1.5rem,3.5vw,2.125rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .section--navy .svc-section-header h2 { color: var(--white); }
+    .svc-section-header p { color: var(--text-mid); font-size: 1rem; line-height: 1.75; }
+    .section--navy .svc-section-header p { color: rgba(255,255,255,0.65); }
+
+    /* ---- Benefit list (Why LVP) ---- */
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 720px) { .benefit-grid { grid-template-columns: 1fr 1fr; } }
+    .benefit-item {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .benefit-item .icon { font-size: 1.5rem; line-height: 1; }
+    .benefit-item h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .benefit-item p { font-size: 0.9375rem; color: var(--text-mid); line-height: 1.65; }
+
+    /* ---- FAQ ---- */
+    .faq-list { max-width: 820px; }
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      margin-bottom: 12px;
+      border: 1px solid rgba(27,42,74,0.08);
+      overflow: hidden;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 24px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.375rem;
+      font-weight: 300;
+      color: var(--teal);
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item .faq-answer {
+      padding: 0 24px 22px;
+      color: var(--text-mid);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+    }
+
+    /* ---- Bottom CTA ---- */
+    .svc-cta {
+      background: var(--navy);
+      text-align: center;
+      padding: clamp(56px,8vw,96px) var(--section-px);
+    }
+    .svc-cta h2 {
+      color: var(--white);
+      font-size: clamp(1.5rem,3.5vw,2.25rem);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .svc-cta p { color: rgba(255,255,255,0.65); font-size: 1.0625rem; margin-bottom: 28px; }
+    .svc-cta .svc-hero-ctas { justify-content: center; }
+  </style>
+
+  <!-- Schema.org: Service + FAQPage + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.ascaniatampa.com/#business",
+        "name": "ASCANIA Renovation & Management",
+        "description": "Flooring installation, interior painting, drywall and home renovation for homeowners in Tampa Bay, FL",
+        "url": "https://www.ascaniatampa.com",
+        "telephone": "+17272031510",
+        "email": "hello@ascaniatampa.com",
+        "logo": "https://www.ascaniatampa.com/assets/images/ascania_logo_on_dark.png",
+        "address": { "@type": "PostalAddress", "addressLocality": "St. Petersburg", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": ["St. Petersburg","Clearwater","Dunedin","Safety Harbor","Largo","Tarpon Springs","Pinellas Park","Seminole","Tampa","Hillsborough County"],
+        "foundingDate": "2021"
+      },
+      {
+        "@type": "Service",
+        "name": "Flooring Installation",
+        "serviceType": "Flooring installation — luxury vinyl plank (LVP), laminate, hardwood, vinyl sheet and tile",
+        "provider": { "@id": "https://www.ascaniatampa.com/#business" },
+        "areaServed": ["Tampa","St. Petersburg","Clearwater","Dunedin","Safety Harbor","Largo","Tarpon Springs","Seminole","Pinellas County","Hillsborough County"],
+        "url": "https://www.ascaniatampa.com/flooring-installation-tampa/",
+        "description": "Professional flooring installation for homeowners in Tampa Bay: luxury vinyl plank, laminate, hardwood, and vinyl — including subfloor prep, furniture moving, and full cleanup."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does vinyl flooring installation cost in Tampa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most luxury vinyl plank (LVP) installations in the Tampa area run between $4 and $8 per square foot installed, depending on the product you choose, the condition of your subfloor, and how much prep work is needed. Hardwood typically costs more. Every home is different — we give you an exact, fixed quote after a free in-home consultation, and the price you approve is the price you pay." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best flooring for Florida homes?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For most Florida homes, luxury vinyl plank (LVP) is the best choice. It is 100% waterproof, handles Florida's heat and humidity without warping, stands up to pets and kids, and feels comfortable barefoot. If you want real wood, engineered hardwood is the better option for Florida's climate than solid hardwood." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does LVP installation take?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A single room is usually done in one day. A whole home of 1,500–2,000 square feet typically takes 3 to 5 days, including removing the old flooring, preparing the subfloor, installation, and cleanup. You get a clear timeline before we start — and we stick to it." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you move furniture before installing flooring?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. We move your furniture, protect it while we work, and put everything back when we're done. We also remove and dispose of your old flooring. You don't have to lift a finger." }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between LVP and laminate?",
+            "acceptedAnswer": { "@type": "Answer", "text": "LVP (luxury vinyl plank) has a waterproof vinyl core — spills, humidity, and wet floors are no problem. Laminate has a wood-fiber core that can swell when exposed to moisture, but it tends to be slightly cheaper and very scratch-resistant. For Florida homes — especially kitchens, bathrooms, and homes near the water — LVP is usually the better choice." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ascaniatampa.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Flooring Installation Tampa", "item": "https://www.ascaniatampa.com/flooring-installation-tampa/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../" aria-label="ASCANIA — Home">
+      <img src="../assets/images/ascania_logo_on_dark.png"
+           alt="ASCANIA Renovation &amp; Management Logo"
+           class="nav-logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-text" style="display:none;">ASCANIA</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="../#services">Services</a></li>
+      <li><a href="./" aria-current="page">Flooring</a></li>
+      <li><a href="../interior-painting-tampa/">Painting</a></li>
+      <li><a href="../#why-ascania">Why ASCANIA</a></li>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../references/index.html">References</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="../#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.8125rem;">Get a Free Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="../#services">Services</a>
+  <a href="./">Flooring</a>
+  <a href="../interior-painting-tampa/">Painting</a>
+  <a href="../#why-ascania">Why ASCANIA</a>
+  <a href="../#about">About</a>
+  <a href="../references/index.html">References</a>
+  <a href="../#contact">Contact</a>
+  <a href="../#contact" class="btn btn-teal">Get a Free Quote</a>
+</nav>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="svc-hero" aria-labelledby="flooring-heading">
+  <div class="svc-hero-inner">
+    <p class="eyebrow" style="color:var(--gold);">Flooring Installation · Tampa Bay, FL</p>
+    <span class="gold-line"></span>
+    <h1 id="flooring-heading">Vinyl &amp; Hardwood Flooring Installation in Tampa Bay — Done Right, On Time</h1>
+    <p class="svc-hero-sub">
+      ASCANIA installs luxury vinyl plank, laminate, hardwood, and vinyl flooring for homeowners in Tampa,
+      St.&nbsp;Petersburg, Clearwater, and across Pinellas County. We do the work ourselves — no subcontractors
+      on your floors — with precise prep, clean edges, and a finish that lasts. Licensed &amp; insured,
+      serving Tampa Bay since 2021.
+    </p>
+    <div class="svc-hero-ctas">
+      <a href="../#contact" class="btn btn-teal">Get a Free Flooring Quote</a>
+      <a href="tel:+17272031510" class="btn btn-secondary">Call or Text (727) 203-1510</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FLOORING TYPES
+     ============================================================ -->
+<section class="section section--offwhite" aria-labelledby="types-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">What We Install</p>
+      <span class="gold-line"></span>
+      <h2 id="types-heading">Flooring Options for Every Room — and Every Budget</h2>
+      <p>Not sure which floor is right for your home? We'll walk you through the options during your free consultation — with honest advice, not upselling.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card service-card--core fade-up">
+        <span class="service-card-tag">★ Most Popular in Florida</span>
+        <h3>Luxury Vinyl Plank (LVP)</h3>
+        <p>The number one choice for Florida homes — 100% waterproof, durable, and it looks like real wood. Perfect for living rooms, kitchens, and whole-home installations. Great with kids, pets, and sandy feet.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Laminate Flooring</h3>
+        <p>A budget-friendly option with excellent scratch resistance and a huge range of styles. Best for bedrooms, living rooms, and other dry areas of your home.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Hardwood Flooring</h3>
+        <p>Timeless warmth and lasting value. For Florida's humidity, we typically recommend engineered hardwood — real wood on top, built to stay flat and stable in our climate.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Vinyl Sheet &amp; Tile</h3>
+        <p>Practical, fully waterproof, and easy to maintain. A smart choice for bathrooms, laundry rooms, and utility spaces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHY LVP FOR FLORIDA
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="lvp-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">Florida Knowledge</p>
+      <span class="gold-line"></span>
+      <h2 id="lvp-heading">Why Luxury Vinyl Plank Is Ideal for Florida Homes</h2>
+      <p>Florida is tough on floors: heat, humidity, AC condensation, pool water, pets, and sand. Here's why LVP has become the go-to flooring for Tampa Bay homeowners.</p>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit-item fade-up">
+        <span class="icon">💧</span>
+        <div>
+          <h3>100% Waterproof</h3>
+          <p>Spills, wet feet from the pool, humidity, AC condensation — LVP's vinyl core doesn't swell, warp, or stain. It's the safest choice for kitchens, bathrooms, and homes near the water.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🌡️</span>
+        <div>
+          <h3>Stable in Heat &amp; Humidity</h3>
+          <p>Unlike solid hardwood, LVP doesn't expand and contract dramatically with Florida's temperature and humidity swings. It stays flat, year-round.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🐾</span>
+        <div>
+          <h3>Pet- &amp; Kid-Proof</h3>
+          <p>Scratch-resistant wear layers handle claws, toys, and sandy shoes. And if a plank ever does get damaged, it can be replaced individually — no need to redo the room.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🦶</span>
+        <div>
+          <h3>Comfortable Barefoot</h3>
+          <p>Floridians live barefoot. LVP feels warmer and softer underfoot than tile, and it doesn't get cold in winter or sticky in summer.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🧽</span>
+        <div>
+          <h3>Easy to Maintain</h3>
+          <p>Sweep and damp-mop — that's it. No refinishing, no sealing, no special cleaners. Ideal for busy households.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🪵</span>
+        <div>
+          <h3>Looks Like Real Wood</h3>
+          <p>Today's LVP comes in remarkably realistic wood looks — from light coastal oak to rich walnut — with textured surfaces you have to touch to tell apart.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="section section--navy" aria-labelledby="fl-process-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">The Process</p>
+      <span class="gold-line"></span>
+      <h2 id="fl-process-heading">How Your Flooring Project Works</h2>
+      <p>Simple, transparent, and respectful of your home — from the first call to the final walk-through.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="step-number">01</div>
+        <div class="step-teal-line"></div>
+        <h3>Free Consultation</h3>
+        <p>We visit your home, measure the space, look at your subfloor, and listen to what you want. You get honest advice and a fixed quote — no obligation.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">02</div>
+        <div class="step-teal-line"></div>
+        <h3>Material Selection</h3>
+        <p>We help you choose the right floor for your rooms, lifestyle, and budget — LVP, laminate, hardwood, or vinyl. You see samples in your own light, in your own home.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">03</div>
+        <div class="step-teal-line"></div>
+        <h3>Prep &amp; Installation</h3>
+        <p>We move the furniture, remove old flooring, level the subfloor, and install your new floor with clean cuts and tight transitions. Then we clean up — completely.</p>
+      </div>
+    </div>
+
+    <div class="svc-hero-ctas" style="margin-top:48px;justify-content:center;">
+      <a href="../#contact" class="btn btn-teal">Get a Free Flooring Quote</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section section--offwhite" aria-labelledby="fl-faq-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">Common Questions</p>
+      <span class="gold-line"></span>
+      <h2 id="fl-faq-heading">Flooring Installation FAQ</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How much does vinyl flooring installation cost in Tampa?</summary>
+        <div class="faq-answer">
+          Most luxury vinyl plank (LVP) installations in the Tampa area run between <strong>$4 and $8 per square foot installed</strong>, depending on the product you choose, the condition of your subfloor, and how much prep work is needed. Hardwood typically costs more. Every home is different — we give you an exact, fixed quote after a free in-home consultation, and the price you approve is the price you pay. No surprises after the work starts.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What is the best flooring for Florida homes?</summary>
+        <div class="faq-answer">
+          For most Florida homes, <strong>luxury vinyl plank (LVP)</strong> is the best choice. It's 100% waterproof, handles Florida's heat and humidity without warping, stands up to pets and kids, and feels comfortable barefoot. If you want real wood, engineered hardwood is the better option for our climate than solid hardwood.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>How long does LVP installation take?</summary>
+        <div class="faq-answer">
+          A single room is usually done <strong>in one day</strong>. A whole home of 1,500–2,000 square feet typically takes <strong>3 to 5 days</strong>, including removing the old flooring, preparing the subfloor, installation, and cleanup. You get a clear timeline before we start — and we stick to it.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you move furniture before installing flooring?</summary>
+        <div class="faq-answer">
+          Yes. We move your furniture, protect it while we work, and put everything back when we're done. We also remove and dispose of your old flooring. You don't have to lift a finger.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between LVP and laminate?</summary>
+        <div class="faq-answer">
+          <strong>LVP</strong> has a waterproof vinyl core — spills, humidity, and wet floors are no problem. <strong>Laminate</strong> has a wood-fiber core that can swell when exposed to moisture, but it tends to be slightly cheaper and very scratch-resistant. For Florida homes — especially kitchens, bathrooms, and anything near the water — LVP is usually the better choice. We'll help you decide based on your rooms and budget.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="fl-area-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">Service Area</p>
+      <span class="gold-line"></span>
+      <h2 id="fl-area-heading">Flooring Installation Across Tampa Bay</h2>
+      <p>
+        ASCANIA installs flooring for homeowners in <strong>Tampa</strong>, <strong>St. Petersburg</strong>,
+        <strong>Clearwater</strong>, <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>,
+        <strong>Tarpon Springs</strong>, <strong>Seminole</strong>, and throughout <strong>Pinellas County</strong>
+        and <strong>Hillsborough County</strong>. Wherever you are in Tampa Bay — we're local, and we show up
+        when we say we will.
+      </p>
+    </div>
+    <div class="city-tags">
+      <span class="city-tag">Tampa</span>
+      <span class="city-tag">St. Petersburg</span>
+      <span class="city-tag">Clearwater</span>
+      <span class="city-tag">Dunedin</span>
+      <span class="city-tag">Safety Harbor</span>
+      <span class="city-tag">Largo</span>
+      <span class="city-tag">Tarpon Springs</span>
+      <span class="city-tag">Seminole</span>
+      <span class="city-tag">Pinellas County</span>
+      <span class="city-tag">Hillsborough County</span>
+    </div>
+    <p style="margin-top:32px;color:var(--text-mid);font-size:0.9375rem;">
+      Planning to paint as well? Many homeowners combine new floors with fresh paint —
+      see our <a href="../interior-painting-tampa/" style="color:var(--teal);font-weight:600;">interior painting services in Tampa Bay</a>.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="svc-cta" aria-labelledby="fl-cta-heading">
+  <h2 id="fl-cta-heading">Ready for New Floors?</h2>
+  <p>Free in-home consultation · Fixed quote within 48 hours · Licensed &amp; Insured</p>
+  <div class="svc-hero-ctas">
+    <a href="../#contact" class="btn btn-teal">Get a Free Flooring Quote</a>
+    <a href="tel:+17272031510" class="btn btn-secondary">Call or Text (727) 203-1510</a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="../assets/images/ascania_logo_on_dark.png"
+               alt="ASCANIA"
+               style="height:36px;width:auto;margin-bottom:10px;"
+               onerror="this.style.display='none';" />
+          <p class="footer-brand-name">ASCANIA</p>
+        </div>
+        <p class="footer-tagline">Flooring, Painting &amp; Home Renovation · Tampa Bay, FL</p>
+        <p class="footer-tagline">Ascania Consulting, Corp. · Est. 2021</p>
+        <div class="footer-contact-list" style="margin-top:16px;">
+          <a href="tel:+17272031510">+1 (727) 203-1510 <span class="contact-item-hint">· Call &amp; Text</span></a>
+          <a href="mailto:hello@ascaniatampa.com">hello@ascaniatampa.com</a>
+          <a href="https://www.ascaniatampa.com">ascaniatampa.com</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="../#services">Services</a>
+          <a href="./">Flooring</a>
+          <a href="../interior-painting-tampa/">Painting</a>
+          <a href="../#why-ascania">Why ASCANIA</a>
+          <a href="../references/index.html">References</a>
+          <a href="../#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Ascania Consulting, Corp. All rights reserved.</p>
+      <p class="footer-cities">Serving: St. Petersburg · Clearwater · Dunedin · Safety Harbor · Largo · Tarpon Springs · Seminole · Tampa · Pinellas County</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

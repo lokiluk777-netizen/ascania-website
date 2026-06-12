@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Interior Painting Tampa Bay | House Painters | ASCANIA</title>
+  <meta name="description" content="Professional interior &amp; exterior painting in Tampa, St. Petersburg &amp; Clearwater. Careful prep, crisp lines, clean job sites. Get a free quote today." />
+  <meta name="keywords" content="interior painting Tampa, house painters Tampa Bay, interior painter St. Petersburg FL, room painting contractor Clearwater, professional painters Tampa" />
+  <link rel="canonical" href="https://www.ascaniatampa.com/interior-painting-tampa/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.ascaniatampa.com/interior-painting-tampa/" />
+  <meta property="og:title"       content="Interior Painting in Tampa Bay | ASCANIA" />
+  <meta property="og:description" content="Professional interior &amp; exterior painting for homeowners in Tampa, St. Petersburg &amp; Clearwater. Clean, crisp, no mess left behind. Free quotes." />
+  <meta property="og:image"       content="https://www.ascaniatampa.com/assets/images/ascania_logo_on_dark.png" />
+  <meta name="twitter:card"       content="summary_large_image" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon"    href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180"    href="../assets/images/apple-touch-icon.png" />
+  <link rel="manifest"                            href="../site.webmanifest" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    /* ---- Service page hero ---- */
+    .svc-hero {
+      background: var(--navy);
+      padding: clamp(120px,16vw,180px) var(--section-px) clamp(64px,8vw,100px);
+      position: relative;
+      overflow: hidden;
+    }
+    .svc-hero-inner { max-width: var(--max-w); margin: 0 auto; }
+    .svc-hero h1 {
+      color: var(--white);
+      font-size: clamp(1.75rem,4.5vw,2.875rem);
+      font-weight: 700;
+      line-height: 1.15;
+      max-width: 820px;
+      margin-bottom: 20px;
+    }
+    .svc-hero p.svc-hero-sub {
+      color: rgba(255,255,255,0.7);
+      font-size: clamp(1rem,2vw,1.125rem);
+      line-height: 1.75;
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+    .svc-hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; }
+
+    /* ---- Content typography ---- */
+    .svc-section-header { max-width: 760px; margin-bottom: 40px; }
+    .svc-section-header h2 {
+      font-size: clamp(1.5rem,3.5vw,2.125rem);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    .section--navy .svc-section-header h2 { color: var(--white); }
+    .svc-section-header p { color: var(--text-mid); font-size: 1rem; line-height: 1.75; }
+    .section--navy .svc-section-header p { color: rgba(255,255,255,0.65); }
+
+    /* ---- Benefit list (What sets us apart) ---- */
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 720px) { .benefit-grid { grid-template-columns: 1fr 1fr; } }
+    .benefit-item {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .benefit-item .icon { font-size: 1.5rem; line-height: 1; }
+    .benefit-item h3 { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+    .benefit-item p { font-size: 0.9375rem; color: var(--text-mid); line-height: 1.65; }
+
+    /* ---- FAQ ---- */
+    .faq-list { max-width: 820px; }
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      margin-bottom: 12px;
+      border: 1px solid rgba(27,42,74,0.08);
+      overflow: hidden;
+    }
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 20px 24px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after {
+      content: '+';
+      font-size: 1.375rem;
+      font-weight: 300;
+      color: var(--teal);
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item .faq-answer {
+      padding: 0 24px 22px;
+      color: var(--text-mid);
+      font-size: 0.9375rem;
+      line-height: 1.75;
+    }
+
+    /* ---- Bottom CTA ---- */
+    .svc-cta {
+      background: var(--navy);
+      text-align: center;
+      padding: clamp(56px,8vw,96px) var(--section-px);
+    }
+    .svc-cta h2 {
+      color: var(--white);
+      font-size: clamp(1.5rem,3.5vw,2.25rem);
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .svc-cta p { color: rgba(255,255,255,0.65); font-size: 1.0625rem; margin-bottom: 28px; }
+    .svc-cta .svc-hero-ctas { justify-content: center; }
+  </style>
+
+  <!-- Schema.org: Service + FAQPage + LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.ascaniatampa.com/#business",
+        "name": "ASCANIA Renovation & Management",
+        "description": "Flooring installation, interior painting, drywall and home renovation for homeowners in Tampa Bay, FL",
+        "url": "https://www.ascaniatampa.com",
+        "telephone": "+17272031510",
+        "email": "hello@ascaniatampa.com",
+        "logo": "https://www.ascaniatampa.com/assets/images/ascania_logo_on_dark.png",
+        "address": { "@type": "PostalAddress", "addressLocality": "St. Petersburg", "addressRegion": "FL", "addressCountry": "US" },
+        "areaServed": ["St. Petersburg","Clearwater","Dunedin","Safety Harbor","Largo","Tarpon Springs","Pinellas Park","Seminole","Tampa","Hillsborough County"],
+        "foundingDate": "2021"
+      },
+      {
+        "@type": "Service",
+        "name": "Interior & Exterior Painting",
+        "serviceType": "Interior painting, exterior painting, accent walls, ceilings, trim and doors",
+        "provider": { "@id": "https://www.ascaniatampa.com/#business" },
+        "areaServed": ["Tampa","St. Petersburg","Clearwater","Dunedin","Safety Harbor","Largo","Tarpon Springs","Seminole","Pinellas County","Hillsborough County"],
+        "url": "https://www.ascaniatampa.com/interior-painting-tampa/",
+        "description": "Professional interior and exterior painting for homeowners in Tampa Bay: thorough prep, premium paints, crisp lines, and a clean home when we leave."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does interior painting cost in Tampa?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most single rooms in the Tampa area run between $400 and $900, depending on room size, ceiling height, and how much prep work the walls need. Whole-home interiors typically range from $3,500 to $8,000 or more. We give you an exact, fixed quote after a free walk-through — and the price you approve is the price you pay." }
+          },
+          {
+            "@type": "Question",
+            "name": "How many coats of paint do you apply?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Two coats is our standard for a rich, even finish. If you're making a dramatic color change or painting over stains or repairs, we add a primer coat first. We never thin paint to stretch it — what we quote is what goes on your walls." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide color consultation?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Choosing colors is one of the hardest parts of any painting project. We help you narrow down options, provide sample swatches, and can paint test patches on your walls so you can see the color in your own light before committing." }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to paint a room?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A standard bedroom or living room usually takes one day, including prep and two coats. A whole-home interior typically takes 3 to 5 days depending on size and how much trim and ceiling work is included. You get a clear timeline before we start." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to move furniture before painters arrive?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. We move and cover your furniture, protect your floors, and put everything back when we're done. The only thing we ask is that you remove small valuables and fragile items from the room." }
+          },
+          {
+            "@type": "Question",
+            "name": "What paint brands do you use?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We work with premium lines from Sherwin-Williams and Benjamin Moore — paints that cover better, last longer, and stand up to Florida's humidity. If you have a preferred brand or product, we're happy to use it." }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ascaniatampa.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Interior Painting Tampa", "item": "https://www.ascaniatampa.com/interior-painting-tampa/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="../" aria-label="ASCANIA — Home">
+      <img src="../assets/images/ascania_logo_on_dark.png"
+           alt="ASCANIA Renovation &amp; Management Logo"
+           class="nav-logo"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+      <span class="nav-logo-text" style="display:none;">ASCANIA</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="../#services">Services</a></li>
+      <li><a href="../flooring-installation-tampa/">Flooring</a></li>
+      <li><a href="./" aria-current="page">Painting</a></li>
+      <li><a href="../#why-ascania">Why ASCANIA</a></li>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../references/index.html">References</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <a href="../#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.8125rem;">Get a Free Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <a href="../#services">Services</a>
+  <a href="../flooring-installation-tampa/">Flooring</a>
+  <a href="./">Painting</a>
+  <a href="../#why-ascania">Why ASCANIA</a>
+  <a href="../#about">About</a>
+  <a href="../references/index.html">References</a>
+  <a href="../#contact">Contact</a>
+  <a href="../#contact" class="btn btn-teal">Get a Free Quote</a>
+</nav>
+
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="svc-hero" aria-labelledby="painting-heading">
+  <div class="svc-hero-inner">
+    <p class="eyebrow" style="color:var(--gold);">Interior &amp; Exterior Painting · Tampa Bay, FL</p>
+    <span class="gold-line"></span>
+    <h1 id="painting-heading">Interior Painting in Tampa Bay — Clean, Crisp, No Mess Left Behind</h1>
+    <p class="svc-hero-sub">
+      ASCANIA paints homes for homeowners in Tampa, St.&nbsp;Petersburg, Clearwater, and across Pinellas County.
+      Thorough prep, premium paints, razor-sharp lines — and a home that's left clean every single day we work
+      in it. Licensed &amp; insured, serving Tampa Bay since 2021.
+    </p>
+    <div class="svc-hero-ctas">
+      <a href="../#contact" class="btn btn-teal">Get a Free Painting Quote</a>
+      <a href="tel:+17272031510" class="btn btn-secondary">Call or Text (727) 203-1510</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PAINTING SERVICES
+     ============================================================ -->
+<section class="section section--offwhite" aria-labelledby="pt-services-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">What We Paint</p>
+      <span class="gold-line"></span>
+      <h2 id="pt-services-heading">Painting Services for Every Part of Your Home</h2>
+      <p>One accent wall or the whole house — we paint it with the same care, the same prep, and the same crisp finish.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card service-card--core fade-up">
+        <span class="service-card-tag">★ Most Requested</span>
+        <h3>Interior Painting</h3>
+        <p>Single rooms, multiple rooms, or your whole home — walls painted with proper prep, premium paint, and two full coats for a finish that lasts.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Exterior Painting</h3>
+        <p>Fresh curb appeal and protection from the Florida sun. Surfaces cleaned and prepped properly, painted with UV- and moisture-resistant exterior paints.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Accent &amp; Feature Walls</h3>
+        <p>A single wall can transform a room. We help you pick the right color and deliver perfectly sharp edges where it matters most.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Ceiling Painting</h3>
+        <p>The job most people dread doing themselves. We handle ceilings cleanly — no drips on your floors, no roller marks overhead.</p>
+      </div>
+      <div class="service-card fade-up">
+        <span class="service-card-tag">In-house</span>
+        <h3>Trim, Baseboards &amp; Doors</h3>
+        <p>Crisp white trim makes every wall color look better. We paint baseboards, casings, doors, and crown molding with a smooth, durable finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     WHAT SETS US APART
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="pt-diff-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">The Difference</p>
+      <span class="gold-line"></span>
+      <h2 id="pt-diff-heading">Why Our Paint Jobs Look Better — and Last Longer</h2>
+      <p>Anyone can roll paint on a wall. The difference between a paint job you tolerate and one you love is everything that happens before and after the painting.</p>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit-item fade-up">
+        <span class="icon">🛡️</span>
+        <div>
+          <h3>Prep Comes First</h3>
+          <p>We cover your floors and furniture, tape every edge, and repair nail holes, cracks, and drywall imperfections before any paint goes on. Paint can't fix a bad surface — prep can.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🎨</span>
+        <div>
+          <h3>Premium Materials</h3>
+          <p>We use premium lines from Sherwin-Williams and Benjamin Moore — better coverage, truer color, and a finish that stands up to Florida humidity and everyday life.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">📏</span>
+        <div>
+          <h3>Crisp, Clean Lines</h3>
+          <p>Where the wall meets the ceiling, the trim, the next color — that's where quality shows. Our edges are sharp enough that you'll find yourself looking at them.</p>
+        </div>
+      </div>
+      <div class="benefit-item fade-up">
+        <span class="icon">🧹</span>
+        <div>
+          <h3>No Mess Left Behind</h3>
+          <p>We tidy up at the end of every workday — not just at the end of the job. When we leave, your home is clean, your furniture is back, and the only evidence we were there is the finish.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="section section--navy" aria-labelledby="pt-process-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">The Process</p>
+      <span class="gold-line"></span>
+      <h2 id="pt-process-heading">How Your Painting Project Works</h2>
+      <p>From the first call to the final walk-through — simple, transparent, and respectful of your home.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step fade-up">
+        <div class="step-number">01</div>
+        <div class="step-teal-line"></div>
+        <h3>Consultation &amp; Color</h3>
+        <p>We walk through your rooms, talk about what you want, and help you choose colors — with samples and test patches in your own light. You get a fixed quote, free.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">02</div>
+        <div class="step-teal-line"></div>
+        <h3>Prep &amp; Painting</h3>
+        <p>We protect everything, repair surfaces, and apply two coats of premium paint with clean, crisp edges. Ceilings, walls, and trim — in the right order, done right.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-number">03</div>
+        <div class="step-teal-line"></div>
+        <h3>Cleanup &amp; Walk-Through</h3>
+        <p>We clean up completely, put your furniture back, and walk every room with you. If anything isn't perfect, we fix it before we call the job done.</p>
+      </div>
+    </div>
+
+    <div class="svc-hero-ctas" style="margin-top:48px;justify-content:center;">
+      <a href="../#contact" class="btn btn-teal">Get a Free Painting Quote</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section section--offwhite" aria-labelledby="pt-faq-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">Common Questions</p>
+      <span class="gold-line"></span>
+      <h2 id="pt-faq-heading">Interior Painting FAQ</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How much does interior painting cost in Tampa?</summary>
+        <div class="faq-answer">
+          Most single rooms in the Tampa area run between <strong>$400 and $900</strong>, depending on room size, ceiling height, and how much prep work the walls need. Whole-home interiors typically range from <strong>$3,500 to $8,000+</strong>. We give you an exact, fixed quote after a free walk-through — and the price you approve is the price you pay.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>How many coats of paint do you apply?</summary>
+        <div class="faq-answer">
+          Two coats is our standard for a rich, even finish. If you're making a dramatic color change or painting over stains or repairs, we add a primer coat first. We never thin paint to stretch it — what we quote is what goes on your walls.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you provide color consultation?</summary>
+        <div class="faq-answer">
+          Yes. Choosing colors is one of the hardest parts of any painting project. We help you narrow down options, provide sample swatches, and can paint test patches on your walls — so you can see the color in your own light before committing.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>How long does it take to paint a room?</summary>
+        <div class="faq-answer">
+          A standard bedroom or living room usually takes <strong>one day</strong>, including prep and two coats. A whole-home interior typically takes <strong>3 to 5 days</strong> depending on size and how much trim and ceiling work is included. You get a clear timeline before we start.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do I need to move furniture before painters arrive?</summary>
+        <div class="faq-answer">
+          No. We move and cover your furniture, protect your floors, and put everything back when we're done. The only thing we ask: please remove small valuables and fragile items from the room.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What paint brands do you use?</summary>
+        <div class="faq-answer">
+          We work with premium lines from <strong>Sherwin-Williams</strong> and <strong>Benjamin Moore</strong> — paints that cover better, last longer, and stand up to Florida's humidity. If you have a preferred brand or product, we're happy to use it.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="section section--white" aria-labelledby="pt-area-heading">
+  <div class="container">
+    <div class="svc-section-header">
+      <p class="eyebrow">Service Area</p>
+      <span class="gold-line"></span>
+      <h2 id="pt-area-heading">House Painters Serving All of Tampa Bay</h2>
+      <p>
+        ASCANIA paints homes in <strong>Tampa</strong>, <strong>St. Petersburg</strong>, <strong>Clearwater</strong>,
+        <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>, <strong>Tarpon Springs</strong>,
+        <strong>Seminole</strong>, and throughout <strong>Pinellas County</strong> and <strong>Hillsborough County</strong>.
+        Wherever you are in Tampa Bay — we're local, and we show up when we say we will.
+      </p>
+    </div>
+    <div class="city-tags">
+      <span class="city-tag">Tampa</span>
+      <span class="city-tag">St. Petersburg</span>
+      <span class="city-tag">Clearwater</span>
+      <span class="city-tag">Dunedin</span>
+      <span class="city-tag">Safety Harbor</span>
+      <span class="city-tag">Largo</span>
+      <span class="city-tag">Tarpon Springs</span>
+      <span class="city-tag">Seminole</span>
+      <span class="city-tag">Pinellas County</span>
+      <span class="city-tag">Hillsborough County</span>
+    </div>
+    <p style="margin-top:32px;color:var(--text-mid);font-size:0.9375rem;">
+      Thinking about new floors too? Fresh paint and new flooring together transform a home —
+      see our <a href="../flooring-installation-tampa/" style="color:var(--teal);font-weight:600;">flooring installation services in Tampa Bay</a>.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="svc-cta" aria-labelledby="pt-cta-heading">
+  <h2 id="pt-cta-heading">Ready for a Fresh Look?</h2>
+  <p>Free walk-through &amp; color consultation · Fixed quote within 48 hours · Licensed &amp; Insured</p>
+  <div class="svc-hero-ctas">
+    <a href="../#contact" class="btn btn-teal">Get a Free Painting Quote</a>
+    <a href="tel:+17272031510" class="btn btn-secondary">Call or Text (727) 203-1510</a>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="../assets/images/ascania_logo_on_dark.png"
+               alt="ASCANIA"
+               style="height:36px;width:auto;margin-bottom:10px;"
+               onerror="this.style.display='none';" />
+          <p class="footer-brand-name">ASCANIA</p>
+        </div>
+        <p class="footer-tagline">Flooring, Painting &amp; Home Renovation · Tampa Bay, FL</p>
+        <p class="footer-tagline">Ascania Consulting, Corp. · Est. 2021</p>
+        <div class="footer-contact-list" style="margin-top:16px;">
+          <a href="tel:+17272031510">+1 (727) 203-1510 <span class="contact-item-hint">· Call &amp; Text</span></a>
+          <a href="mailto:hello@ascaniatampa.com">hello@ascaniatampa.com</a>
+          <a href="https://www.ascaniatampa.com">ascaniatampa.com</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="../#services">Services</a>
+          <a href="../flooring-installation-tampa/">Flooring</a>
+          <a href="./">Painting</a>
+          <a href="../#why-ascania">Why ASCANIA</a>
+          <a href="../references/index.html">References</a>
+          <a href="../#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Ascania Consulting, Corp. All rights reserved.</p>
+      <p class="footer-cities">Serving: St. Petersburg · Clearwater · Dunedin · Safety Harbor · Largo · Tarpon Springs · Seminole · Tampa · Pinellas County</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
