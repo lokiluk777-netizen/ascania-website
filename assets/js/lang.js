@@ -22,7 +22,7 @@ const TRANSLATIONS = {
     'hero-h2':      'Flooring, Painting & Renovation for Homeowners in Tampa, St. Petersburg & Clearwater',
     'hero-body':    'New floors, fresh paint, a bathroom that finally feels right — on time, on budget, without the chaos. We treat your home like our own.',
     'hero-cta1':    'Get a Free Quote',
-    'hero-cta2':    'Call or Text (727) 203-1510',
+    'hero-cta2':    'Call or Text (727) 992-3578',
 
     /* PAIN POINTS */
     'pain-eyebrow': 'The Problem',
@@ -99,7 +99,7 @@ const TRANSLATIONS = {
     /* SERVICE AREA */
     'area-eyebrow': 'Coverage',
     'area-h2':      'Serving the Entire Tampa Bay Area',
-    'area-body':    'ASCANIA is your local partner for flooring, painting, and home renovation across Tampa Bay: <strong>St. Petersburg</strong>, <strong>Clearwater</strong>, <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>, <strong>Tarpon Springs</strong>, <strong>Pinellas Park</strong>, <strong>Seminole</strong>, <strong>Tampa</strong>, and <strong>Hillsborough County</strong>.',
+    'area-body':    'ASCANIA is your local partner for flooring, painting, and home renovation across Tampa Bay: <strong>St. Petersburg</strong>, <strong>Clearwater</strong>, <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>, <strong>Tarpon Springs</strong>, <strong>Holiday</strong>, <strong>New Port Richey</strong>, <strong>Trinity</strong>, <strong>Pinellas Park</strong>, <strong>Seminole</strong>, <strong>Tampa</strong>, and <strong>Hillsborough County</strong>.',
 
     /* ABOUT */
     'about-eyebrow': 'The Team',
@@ -212,7 +212,7 @@ const TRANSLATIONS = {
     'hero-h2':      'Bodenbeläge, Malerarbeiten & Renovierung für Hauseigentümer in Tampa, St. Petersburg & Clearwater',
     'hero-body':    'Neue Böden, frische Farbe, ein Bad, das endlich passt — termingerecht, im Budget, ohne Chaos. Wir behandeln Ihr Zuhause wie unser eigenes.',
     'hero-cta1':    'Kostenloses Angebot',
-    'hero-cta2':    'Anrufen: (727) 203-1510',
+    'hero-cta2':    'Anrufen: (727) 992-3578',
 
     /* PAIN POINTS */
     'pain-eyebrow': 'Das Problem',
@@ -289,7 +289,7 @@ const TRANSLATIONS = {
     /* SERVICE AREA */
     'area-eyebrow': 'Einzugsgebiet',
     'area-h2':      'Tätig in der gesamten Tampa Bay Area',
-    'area-body':    'ASCANIA ist Ihr lokaler Partner für Bodenbeläge, Malerarbeiten und Renovierung in der Tampa Bay Area: <strong>St. Petersburg</strong>, <strong>Clearwater</strong>, <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>, <strong>Tarpon Springs</strong>, <strong>Pinellas Park</strong>, <strong>Seminole</strong>, <strong>Tampa</strong> und <strong>Hillsborough County</strong>.',
+    'area-body':    'ASCANIA ist Ihr lokaler Partner für Bodenbeläge, Malerarbeiten und Renovierung in der Tampa Bay Area: <strong>St. Petersburg</strong>, <strong>Clearwater</strong>, <strong>Dunedin</strong>, <strong>Safety Harbor</strong>, <strong>Largo</strong>, <strong>Tarpon Springs</strong>, <strong>Holiday</strong>, <strong>New Port Richey</strong>, <strong>Trinity</strong>, <strong>Pinellas Park</strong>, <strong>Seminole</strong>, <strong>Tampa</strong> und <strong>Hillsborough County</strong>.',
 
     /* ABOUT */
     'about-eyebrow': 'Das Team',
