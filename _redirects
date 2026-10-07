@@ -1,8 +1,7 @@
 # Cloudflare Pages Redirects
-# ascania-tampa.com → ascaniatampa.com  (set in Cloudflare dashboard as domain redirect)
-
-# www → apex redirect
-https://www.ascaniatampa.com/* https://ascaniatampa.com/:splat 301
+# Host redirects (ascaniatampa.com -> www.ascaniatampa.com, ascania-tampa.com)
+# are handled by Cloudflare Redirect Rules in the dashboard, NOT here:
+# _redirects only supports relative paths, absolute host sources are ignored.
 
 # Trailing slash normalization
 /references   /references/   301
